@@ -1,0 +1,4 @@
+INFO: System started successfully.
+ERROR: Failed to connect to database.
+WARNING: High memory usage detected.
+error: Invalid user login attempt.

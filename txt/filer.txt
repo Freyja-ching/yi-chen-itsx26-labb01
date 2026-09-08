@@ -1,0 +1,11 @@
+app/
+docs/
+filer.txt
+hello.sh*
+info.txt
+mittskript.sh*
+ovningar/
+README.md
+script7.sh*
+users.txt
+Det här är en ny rad
