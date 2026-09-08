@@ -52,6 +52,7 @@
 - **Vad fungerade bra:** Det gick bra att ansluta via PowerShell med min SSH-nyckel när jag väl fick konfigureringen att fungera.
 - **Vad var svårt:** Jag hade stora problem med att ansluta via VS Code och trodde först att det berodde på att jag hade för många resurser igång, vilket gjorde att jag skapade om VM flera gånger. Dessutom missade jag att bocka i rutan för Public IP vid ett tillfälle.
 - **Vad lärde jag mig:**
-  1. Jag lärde mig hur `chmod 600` ändrar filrättigheter och skyddar känslig data (som SSH-nycklar).
-  2. Jag lärde mig hantera OCI-nätverk flexibelt. När min VM saknade Public IP behövde jag inte radera hela instansen och börja om, utan kunde gå in under VNIC/nätverksinställningarna och tilldela en Public IP i efterhand.
-  3. Jag lärde mig genom praktiskt arbete att resurser i OCI hänger ihop och kan vara beroende av varandra. När jag försökte ta bort ett subnet fick jag information om att andra resurser först behövde tas bort. Det gav mig en bättre förståelse för hur resurser i molnet hänger ihop.
+
+1. Jag lärde mig hur `chmod 600` ändrar filrättigheter och skyddar känslig data (som SSH-nycklar).
+2. Jag lärde mig hantera OCI-nätverk flexibelt. När min VM saknade Public IP behövde jag inte radera hela instansen och börja om, utan kunde gå in under VNIC/nätverksinställningarna och tilldela en Public IP i efterhand.
+3. Jag lärde mig genom praktiskt arbete att resurser i OCI hänger ihop och kan vara beroende av varandra. När jag försökte ta bort ett subnet fick jag information om att andra resurser först behövde tas bort. Det gav mig en bättre förståelse för hur resurser i molnet hänger ihop.
