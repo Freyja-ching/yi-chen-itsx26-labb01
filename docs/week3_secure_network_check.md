@@ -40,7 +40,7 @@ DNS-uppslagningen lyckades med `getent hosts google.com`.
 
 **Slutsats:** DNS fungerar i WSL-miljön.
 
-## Test 2 - Lokal tjänst fungerar
+### Test 2 - Lokal tjänst fungerar
 
 Den lokala HTTP-tjänsten startades på `127.0.0.1:8080`. `curl` fick HTTP 200 som svar.
 
@@ -130,6 +130,12 @@ Skriptet skapade inga tillfälliga systemförändringar eller brandväggsregler.
 
 ## AI-deklaration
 
-AI användes för att förklara Bash-syntax, diskutera skriptets struktur och hjälpa till med dokumentationen.
+AI-deklaration
 
-Jag testade själv kommandon och skriptet i WSL-miljön och verifierade resultaten. Jag ansvarar själv för att koden fungerar och att innehållet i inlämningen är korrekt.
+Jag använde ChatGPT som stöd för att förklara Bash-syntax, diskutera skriptets struktur och kontrollera dokumentationens tydlighet.
+
+Jag använde förslag om variabler, funktioner, villkor, loop, loggning och testfall när de passade uppgiftens krav. Jag valde bort förslag som gjorde skriptet mer avancerat än nödvändigt eller som inte behövdes för uppgiften.
+
+Jag verifierade kommandon och skript genom egna tester i WSL Ubuntu, bland annat DNS-kontroll, lokal HTTP-tjänst, tomt DNS-värde och test mot en port där ingen tjänst lyssnade. Jag kontrollerade även skriptets syntax med bash -n.
+
+Jag använde kursens uppgiftsinstruktioner som grund för kraven och ansvarar själv för den slutliga koden, testerna, resultaten och dokumentationen. Jag har själv utformat och anpassat skriptets kontroller och testning till min WSL-miljö.
