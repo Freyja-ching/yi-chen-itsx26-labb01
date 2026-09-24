@@ -1,61 +1,44 @@
-# Evidence - Secure Network Check
+# Evidence - Network Traffic Investigation
 
-Testerna genomfördes i WSL Ubuntu.
+## Pcap-källa
 
-Ingen känslig information som lösenord, nycklar eller tokens har inkluderats.
+Pcap-filen skapades av mig i min egen WSL2 Ubuntu-miljö.
 
-## Test 1 - DNS fungerar
+Jag skapade kontrollerad trafik med:
 
-**Kommando:**
-`getent hosts google.com`
+* ICMP med `ping`
+* DNS-förfrågan med `dig`
+* HTTP-trafik med `curl`
+* HTTPS-trafik med `curl`
 
-**Resultat:**
-DNS-uppslagningen lyckades.
+Capture gjordes med `tcpdump`:
 
-**Observation:**
-`google.com` kunde översättas till en IP-adress.
+```bash
+sudo tcpdump -i eth0 -s 0 -c 5000 -w trafikmix.pcap
+```
 
-**Slutsats:**
-DNS fungerar i WSL-miljön.
+Capture-gränsen var 5000 paket. Totalt fångades **47 paket** under ungefär **24 sekunder**.
 
-## Test 2 - Lokal tjänst fungerar
+Den råa pcap-filen sparas lokalt och laddas inte upp till GitHub.
 
-**Kommando:**
-`curl -I http://127.0.0.1:8080`
+## Analysdatum
 
-**Resultat:**
-HTTP-förfrågan lyckades och tjänsten svarade med HTTP 200.
+Analysen genomfördes 24 september 2026.
 
-**Observation:**
-En lokal HTTP-tjänst lyssnade på port 8080 och svarade på localhost.
+## Miljö
 
-**Slutsats:**
-Den lokala tjänsten var tillgänglig från WSL-miljön.
+Analysen genomfördes i:
 
-## Test 3 - Tomt DNS-värde
+* Windows med WSL2
+* Ubuntu
+* Wireshark 4.6.4
+* tcpdump
+* Nätverksinterface: `eth0`
 
-**Test:**
-`DNS_HOST=""`
+## Sanering
 
-**Resultat:**
-Skriptet gav status `WARN` och fortsatte utan att krascha.
+Rå pcap-data publiceras inte i GitHub.
 
-**Observation:**
-Skriptet upptäckte att DNS-värdet var tomt innan DNS-uppslagningen kördes.
+I rapporten används endast relevant nätverksevidens, till exempel packet numbers, protokoll, portar och observerade händelser.
 
-**Slutsats:**
-Skriptet hanterar ett tomt DNS-värde på ett kontrollerat sätt.
-
-## Test 4 - Ingen lokal tjänst på porten
-
-**Kommando:**
-`bash scripts/secure_network_check.sh`
-
-**Resultat:**
-Anslutningen till `127.0.0.1:8080` misslyckades. Skriptet gav `FAIL: 1` och exit code `1`.
-
-**Observation:**
-Ingen lokal tjänst lyssnade på port 8080 när testet kördes.
-
-**Slutsats:**
-Skriptet upptäckte att den lokala tjänsten inte var tillgänglig och avslutades med en felkod.
+Känsliga uppgifter som lösenord, nycklar, tokens och cookies har inte inkluderats.
