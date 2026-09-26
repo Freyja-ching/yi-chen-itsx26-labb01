@@ -4,11 +4,11 @@
 
 Programmet läser data från `auth.log`, `access.log` och `suspicious_ips.txt`.
 
-Från `auth.log` räknar programmet antal misslyckade inloggningar och sammanställer source IP-adresser. Programmet jämför sedan de observeradde IP-adresserna med IP-adresserna i `suspicious_ips.txt`.
+Från `auth.log` räknar programmet antal misslyckade inloggningar och sammanställer source IP-adresser. Programmet jämför sedan de observerade IP-adresserna med IP-adresserna i `suspicious_ips.txt`.
 
-Från `access.log` räknar programmet antal `401`-svar och sammanställer source Ip-adresser.
+Från `access.log` räknar programmet antal `401`-svar och sammanställer source IP-adresser.
 
-Progrmmet ändrar inte originalfilerna. Resultatet skrivs till `output/security_report.txt`.
+Programmet ändrar inte originalfilerna. Resultatet skrivs till `output/security_report.txt`.
 
 ### Observation
 
@@ -22,7 +22,7 @@ I `access.log` finns 2 svar med status `401`. IP-adressen `203.0.113.15` föreko
 
 ### Slutsats
 
-Resultatet visar flera observationer som kan vara relevanta för en säkerhetsanalys. Framför allt förekommer `203.0.113.15` i flera datakällor och finns i indikatiorlistan.
+Resultatet visar flera observationer som kan vara relevanta för en säkerhetsanalys. Framför allt förekommer `203.0.113.15` i flera datakällor och finns i indikatorlistan.
 
 Detta kan vara en signal som behöver undersökas vidare, men resultatet bevisar inte att IP-adressen är en angripare.
 
@@ -33,7 +33,7 @@ tidsperiod. Programmet analyserar endast de data som finns i de använda loggfil
 
 En IP-adress som finns i indikatorlistan är inte automatiskt bevis på ett angrepp. Det kan finnas andra förklaringar till observationerna.
 
-En rad i `auth.log` saknar source IP och kan därför inte anävndas i IP-sammanställningen. Programmet hoppar över raden och rapporterar detta som en överhoppad rad.
+En rad i `auth.log` saknar source IP och kan därför inte användas i IP-sammanställningen. Programmet hoppar över raden och rapporterar detta som en överhoppad rad.
 
 ### Säkerhetsbetydelse
 
