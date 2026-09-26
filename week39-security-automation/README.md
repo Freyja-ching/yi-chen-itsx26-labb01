@@ -149,10 +149,8 @@ Testet visar att programmet kan hantera en rad som saknar source IP utan att sto
 
 ## AI-stöd
 
-AI användes som stöd under arbetet med uppgiften.
+Jag använde AI som stöd under arbetet med uppgiften. Jag använde AI främst för att förstå Python-kod, hitta fel i koden och få hjälp att formulera dokumentationen.
 
-AI hjälpte bland annat till med att förklara Python-syntax, felsöka kod, kontrollera programmets logik och formulera delar av dokumentationen.
+Jag testade själv programmet med kursens data och jämförde resultatet med manuella kontroller. På så sätt kontrollerade jag att resultatet stämde.
 
-Jag kontrollerade koden genom att köra programmet med kursens syntetiska data och jämföra resultatet med manuella kontroller.
-
-Jag har gått igenom programmets dataflöde och kan förklara hur programmet läser loggar, räknar resultat, kontrollerar IP-adresser och skapar rapporten.
+Jag har gått igenom hur programmet läser loggarna, räknar händelser, jämför IP-adresser och skriver resultatet till rapporten. Jag kan därför förklara programmets dataflöde och analyslogik.
