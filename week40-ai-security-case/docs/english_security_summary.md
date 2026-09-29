@@ -1,4 +1,4 @@
-### English Security Summary
+## English Security Summary
 
 Several employees received emails that appeared to come from internal IT support. The emails asked recipients to use a link to keep access to an internal system. One employee clicked the link, but it is not confirmed whether any credentials were entered or whether an account was compromised. The emails may be part of a phishing attempt, but this also needs to be verified.
 
