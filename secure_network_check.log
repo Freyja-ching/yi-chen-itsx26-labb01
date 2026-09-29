@@ -1,0 +1,67 @@
+18:32:18 - [INFO] Kontroll startad.
+19:21:35 - [INFO] Kontroll startad.
+19:25:38 - [INFO] Kontroll startad.
+21:13:03 - [INFO] Kontroll startad.
+21:18:24 - [INFO] Kontroll startad.
+21:20:27 - [INFO] Kontroll startad.
+21:21:37 - [INFO] Kontroll startad.
+21:25:00 - [INFO] Kontroll startad.
+08:56:03 - [INFO] Kontroll startad.
+08:56:03 - [OK] DNS fungerar.
+09:04:59 - [INFO] Kontroll startad.
+09:04:59 - [OK] DNS fungerar.
+09:06:43 - [INFO] Kontroll startad.
+09:06:44 - [OK] DNS fungerar.
+09:11:01 - [INFO] Kontroll startad.
+09:11:01 - [OK] DNS fungerar.
+09:11:01 - [OK] Local service fungerar.
+10:02:34 - [INFO] Kontroll startad.
+10:02:34 - [OK] DNS fungerar.
+10:02:35 - [OK] Local service fungerar.
+13:51:05 - [INFO] Kontroll startad.
+13:51:05 - [OK] DNS fungerar.
+13:51:06 - [OK] Local service fungerar.
+13:51:06 - [INFO] Port overview completed.
+14:01:55 - [INFO] Kontroll startad.
+14:01:55 - [OK] DNS fungerar.
+14:01:55 - [OK] Local service fungerar.
+14:01:55 - [INFO] Port overview completed.
+14:04:33 - [INFO] Kontroll startad.
+14:04:33 - [WARN] DNS host är tom.
+14:04:33 - [OK] Local service fungerar.
+14:04:34 - [INFO] Port overview completed.
+15:43:20 - [INFO] Kontroll startad.
+15:43:20 - [OK] DNS fungerar.
+15:43:20 - [OK] Local service fungerar.
+15:43:20 - [INFO] Port overview completed.
+15:43:20 - [INFO] Running check: dns
+15:43:20 - [INFO] Running check: service
+15:43:21 - [INFO] Running check: ports
+15:54:08 - [INFO] Kontroll startad.
+15:54:08 - [OK] DNS fungerar.
+15:54:08 - [OK] Local service fungerar.
+15:54:08 - [INFO] Port overview completed.
+15:54:08 - [INFO] Running check: dns
+15:54:08 - [INFO] Running check: service
+15:54:08 - [INFO] Running check: ports
+16:33:18 - [INFO] Kontroll startad.
+16:33:18 - [FAIL] DNS fungerar inte.
+16:33:22 - [FAIL] Local service fungerar inte.
+16:33:22 - [INFO] Port overview completed.
+16:33:22 - [INFO] Running check: dns
+16:33:22 - [INFO] Running check: service
+16:33:22 - [INFO] Running check: ports
+16:34:57 - [INFO] Kontroll startad.
+16:34:57 - [OK] DNS fungerar.
+16:34:57 - [FAIL] Local service fungerar inte.
+16:34:57 - [INFO] Port overview completed.
+16:34:57 - [INFO] Running check: dns
+16:34:57 - [INFO] Running check: service
+16:34:57 - [INFO] Running check: ports
+20:15:35 - [INFO] Kontroll startad.
+20:15:35 - [OK] DNS fungerar.
+20:15:35 - [FAIL] Local service fungerar inte.
+20:15:35 - [INFO] Port overview completed.
+20:15:35 - [INFO] Running check: dns
+20:15:35 - [INFO] Running check: service
+20:15:35 - [INFO] Running check: ports
