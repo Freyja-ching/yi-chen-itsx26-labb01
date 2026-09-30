@@ -73,7 +73,7 @@ Den samlade risken bedöms därför som **medel med osäkerhet**. Riskbedömning
 
 CIS 6 handlar om att kontrollera och begränsa användares behörigheter. I detta case är det relevant eftersom ett användarkonto kan påverkas om en medarbetare har lämnat ut sina inloggningsuppgifter.
 
-Organisationen bör kontrollera vilka behörigheter det berörda användarkontot har och begränsa onödiga behörigheter. På så sätt kan konsekvenserna bli mindre om ett konto skulle komprometteras.
+Organisationen bör kontrollera vilka behörigheter det berörda användarkontot har och begränsa onödiga behörigheter. Om flera medarbetare berörs kan deras olika behörigheter också påverka den möjliga konsekvensen av ett komprometterat konto. På så sätt kan konsekvenserna bli mindre om ett konto skulle komprometteras.
 
 Åtgärden kan verifieras genom att kontrollera användarkontots behörigheter och se vilka system och vilken information kontot kan komma åt.
 

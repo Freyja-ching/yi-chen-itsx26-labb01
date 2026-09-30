@@ -1,0 +1,51 @@
+# Mini case A – AI phishing
+
+## 1. Fakta och antaganden
+
+Fakta:
+- Mejlet är välskrivet.
+- Det ser ut att komma från en betrodd intern avsändare.
+- Mottagaren uppmanas att öppna en länk.
+- Det är inte fastställt om AI har använts.
+
+Antaganden:
+- Länken kan vara skadlig.
+- Mottagaren kan ha klickat på länken.
+- Mottagaren kan ha lämnat sina inloggningsuppgifter.
+- Avsändaren kan vara falsk eller komprometterad.
+
+
+## 2. Tillgångar och CIA
+
+Tillgångar:
+- Användarkontot
+- Informationen som kontot har tillgång till
+- Vi vet inte vilken behörighet mottagaren har.
+
+CIA:
+- Konfidentialitet
+- Integritet
+- Tillgänglighet
+
+Viktigast: Konfidentialitet, eftersom känslig information
+kan bli åtkomlig för en obehörig person.
+
+
+## 3. CIS Controls
+
+- CIS 3 – skydda information
+- CIS 6 – kontrollera behörigheter
+- CIS 8 – upptäcka misstänkt aktivitet genom loggar
+- CIS 14 – utbildning om phishing
+
+
+## 4. Åtgärder
+
+Förebyggande:
+- Klicka inte direkt på länken.
+- Kontrollera begäran genom en känd och säker kanal.
+
+Upptäckande:
+- Kontrollera loggar.
+- Se vilka som fått mejlet, klickat på länken
+  och om det finns misstänkta inloggningar.
